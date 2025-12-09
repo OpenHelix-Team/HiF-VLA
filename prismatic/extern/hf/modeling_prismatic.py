@@ -24,7 +24,7 @@ import matplotlib.pyplot as plt
 # import seaborn as sns
 from pathlib import Path
 
-from motionvla.motion_reconstruction import build_motion_tokenizer
+from motion_layers.motion_tokenizer import build_motion_tokenizer
 
 from prismatic.training.train_utils import (
     get_current_action_mask,

@@ -27,7 +27,7 @@ from prismatic.extern.hf.processing_prismatic import PrismaticImageProcessor, Pr
 from prismatic.models.action_heads import DiffusionActionHead, L1RegressionActionHead, Cond_actionModel, MotionTokenManager,JointExpert
 from prismatic.models.film_vit_wrapper import FiLMedPrismaticVisionBackbone
 from prismatic.models.projectors import NoisyActionProjector, ProprioProjector
-from motionvla.motion_reconstruction import MotionTransformerTokenizer,build_motion_tokenizer,HisMotionEncoder
+from motion_layers.motion_tokenizer import MotionTransformerTokenizer,build_motion_tokenizer,HisMotionEncoder
 from prismatic.vla.constants import (
     ACTION_DIM,
     ACTION_PROPRIO_NORMALIZATION_TYPE,

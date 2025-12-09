@@ -15,7 +15,7 @@ from .models import DiT
 from torch.nn import Module, ModuleList
 
 from torch import Tensor
-from motionvla.motion_reconstruction import MotionDecoder
+from motion_layers.motion_tokenizer import MotionDecoder
 from functools import partial
 import torch.nn.functional as F
 FusedLayerNorm = nn.LayerNorm

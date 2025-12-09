@@ -68,7 +68,7 @@ from prismatic.vla.datasets.rlds.utils.data_utils import save_dataset_statistics
 # Sane Defaults
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
-from motionvla.motion_reconstruction import build_motion_tokenizer,MotionDecoder, HisMotionEncoder
+from motion_layers.motion_tokenizer import build_motion_tokenizer,MotionDecoder, HisMotionEncoder
 
 @dataclass
 class FinetuneConfig:
