@@ -75,7 +75,7 @@ pip install "flash-attn==2.5.5" --no-build-isolation
    --dataset_name libero_10_no_noops
   ```
 
-### 3. Inference
+## 🚀 Inference
 
 Below are the four independently trained HiF-VLA checkpoints for LIBERO and CALVIN ABC->D:
 * [hifvla-libero-spatial](https://huggingface.co/minnielin/hifvla-libero-spatial)
