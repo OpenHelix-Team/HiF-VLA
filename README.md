@@ -1,6 +1,6 @@
 # HiF-VLA: Hindsight, Insight and Foresight through Motion Representation for Vision-Language-Action Models
 
-[![arXiv](https://img.shields.io/badge/arXiv-Paper-red.svg)]()
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-red.svg)](https://arxiv.org/abs/2512.09928)
 [![Website](https://img.shields.io/badge/Website-9cf)](https://hifvla.github.io/)
 [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97-Model-yellow)](https://huggingface.co/minnielin/hifvla-libero-long)
 [![Hugging Face Datasets](https://img.shields.io/badge/%F0%9F%A4%97-Dataset-blue)](https://huggingface.co/datasets/minnielin/libero_trajid_rlds)
