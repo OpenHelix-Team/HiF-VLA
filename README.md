@@ -32,7 +32,7 @@ conda activate hif-vla
 pip3 install torch torchvision torchaudio
 
 # Clone hif-vla repo and pip install to download dependencies
-git clone https://github.com/minnie-lin/HiF-VLA.git
+git clone https://github.com/OpenHelix-Team/HiF-VLA.git
 cd HiF-VLA
 pip install -e .
 
@@ -42,6 +42,43 @@ pip install packaging ninja
 ninja --version; echo $?  # Verify Ninja --> should return exit code "0"
 pip install "flash-attn==2.5.5" --no-build-isolation
 
+```
+
+### 将团队仓库导入到你自己的 GitHub 仓库
+
+如果你想把当前这个团队仓库同步到你自己的 GitHub 账号中，推荐使用 **Fork**，这样后续也更容易继续同步团队仓库的更新。
+
+1. 在 GitHub 页面右上角点击 **Fork**，将 `OpenHelix-Team/HiF-VLA` 复制到你自己的账号下。
+2. 克隆你自己的 Fork：
+
+   ```bash
+   git clone https://github.com/<your-username>/HiF-VLA.git
+   cd HiF-VLA
+   ```
+
+3. 将团队仓库保留为上游仓库，方便后续同步更新：
+
+   ```bash
+   git remote add upstream https://github.com/OpenHelix-Team/HiF-VLA.git
+   git remote -v
+   ```
+
+4. 以后如果需要同步团队仓库的最新内容，可以执行：
+
+   ```bash
+   git fetch upstream
+   git checkout main
+   git merge upstream/main
+   ```
+
+如果你不想保留 Fork 关系，也可以在你自己的账号里新建一个空仓库，然后把当前仓库推送过去：
+
+```bash
+git clone https://github.com/OpenHelix-Team/HiF-VLA.git
+cd HiF-VLA
+git remote rename origin upstream
+git remote add origin https://github.com/<your-username>/HiF-VLA.git
+git push -u origin main
 ```
 
 ### 2. Dataset Preparation
